@@ -35,6 +35,7 @@ const Role = enum {
 const Character = struct {
     role: Role,
     gold: u32,
+    health: u8,
     experience: u32,
 };
 
@@ -42,6 +43,7 @@ pub fn main() void {
     // Please initialize Glorp with 100 health.
     var glorp_the_wise = Character{
         .role = Role.wizard,
+        .health = 100,
         .gold = 20,
         .experience = 10,
     };
